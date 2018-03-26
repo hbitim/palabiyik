@@ -6032,43 +6032,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 230px;
   font-family: 'Roboto Slab', serif; }
 
-@media (min-width: 992px) {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4; }
-
-.text-padding {
-  padding: 10px 250px 60px; }
-
 .container-fluid .fixed_top {
   background-color: #FFCB05; }
 
 .plain_bg {
   background-color: #FFCB05; }
 
-/*
-.navbar-toggler{
-  background-color: $bg-color;
-}
-
-.navbar .navbar-toggler{
-    background-color: transparent;
-    color: $bg-color;
-}
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184, 153, 129, 1.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-}
-
-.nav-link {
-  color: $black-color!important;
-  font-size: 1.1rem;
-  font-weight:400;
-}
-.nav-link.active {
-  color: $menu-hover-color !important;
-}
-
-*/
 /* change navbar background */
 nav.navbar {
   background: transparent; }
@@ -6086,7 +6055,6 @@ nav.navbar {
 button.navbar-toggler.navbar-toggler-right {
   border-color: yellow; }
 
-/* change navbar background on collapse */
 .nav-link {
   color: #4b3a00 !important;
   font-size: 1.1rem;

@@ -18,14 +18,27 @@ $menu-hover-color: #800040;
 body {
      background: $bg-color;
      position: relative;
-     //put a distance from jombtron and top line
-     padding-top: 250px;
+     //put a distance 30om jombtron and top line
+     padding-top: 230px;
     //background-color: map-get($theme-colors, "primary");
      font-family: 'Roboto Slab', serif;
 }
 
+@media (min-width: 992px)  {
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+}
+
+.text-padding {
+  padding: 10px 250px 60px;
+}
 
 .container-fluid .fixed_top{
+  background-color: $bg-color;
+}
+
+.plain_bg {
   background-color: $bg-color;
 }
 
@@ -74,11 +87,11 @@ button.navbar-toggler.navbar-toggler-right {
   border-color: yellow;
 }
 /* change navbar background on collapse */
-@media (max-width: 768px) {
-  nav.navbar {
-    background: $bg-color;
-  }
-}
+// @media (max-width: 768px) {
+//   nav.navbar {
+//     background: $bg-color;
+//   }
+// }
 
 .nav-link {
   color: $black-color!important;

@@ -6029,10 +6029,21 @@ a.text-dark:hover, a.text-dark:focus {
 @font-face {}body {
   background: #FFCB05;
   position: relative;
-  padding-top: 250px;
+  padding-top: 230px;
   font-family: 'Roboto Slab', serif; }
 
+@media (min-width: 992px) {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4; }
+
+.text-padding {
+  padding: 10px 250px 60px; }
+
 .container-fluid .fixed_top {
+  background-color: #FFCB05; }
+
+.plain_bg {
   background-color: #FFCB05; }
 
 /*
@@ -6076,10 +6087,6 @@ button.navbar-toggler.navbar-toggler-right {
   border-color: yellow; }
 
 /* change navbar background on collapse */
-@media (max-width: 768px) {
-  nav.navbar {
-    background: #FFCB05; } }
-
 .nav-link {
   color: #4b3a00 !important;
   font-size: 1.1rem;

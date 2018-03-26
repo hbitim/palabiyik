@@ -10,7 +10,6 @@ $theme-colors: (
   primary: #000
 );
 
-
 $bg-color: #FFCB05;
 $black-color: #4b3a00;
 $menu-hover-color: #800040;
@@ -19,21 +18,15 @@ body {
      background: $bg-color;
      position: relative;
      //put a distance 30om jombtron and top line
-     padding-top: 230px;
-    //background-color: map-get($theme-colors, "primary");
+     padding-top: 250px;
+     //background-color: map-get($theme-colors, "primary");
      font-family: 'Roboto Slab', serif;
 }
+.section {
+  // position: absolute;
+  // margin-top: 300px;
 
-@media (min-width: 992px)  {
--webkit-column-count: 4;
--moz-column-count: 4;
-column-count: 4;
 }
-
-.text-padding {
-  padding: 10px 250px 60px;
-}
-
 .container-fluid .fixed_top{
   background-color: $bg-color;
 }
@@ -42,32 +35,7 @@ column-count: 4;
   background-color: $bg-color;
 }
 
-/*
-.navbar-toggler{
-  background-color: $bg-color;
-}
-
-.navbar .navbar-toggler{
-    background-color: transparent;
-    color: $bg-color;
-}
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184, 153, 129, 1.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-}
-
-.nav-link {
-  color: $black-color!important;
-  font-size: 1.1rem;
-  font-weight:400;
-}
-.nav-link.active {
-  color: $menu-hover-color !important;
-}
-
-*/
-
 /* change navbar background */
-
 
 nav.navbar {
   background: transparent;
@@ -86,12 +54,7 @@ nav.navbar {
 button.navbar-toggler.navbar-toggler-right {
   border-color: yellow;
 }
-/* change navbar background on collapse */
-// @media (max-width: 768px) {
-//   nav.navbar {
-//     background: $bg-color;
-//   }
-// }
+
 
 .nav-link {
   color: $black-color!important;
@@ -101,9 +64,6 @@ button.navbar-toggler.navbar-toggler-right {
 .nav-link.active {
   color: $menu-hover-color !important;
 }
-
-
-
 
 
 .logo_border {

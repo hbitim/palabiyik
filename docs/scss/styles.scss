@@ -1,0 +1,82 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    // font-family: BirchStd;
+    // src: url("../assets/fonts/BirchStd.otf") format("opentype");
+}
+
+// In a custom variables file, before or after.
+$theme-colors: (
+  primary: #000
+);
+
+$bg-color: #FFCB05;
+$black-color: #4b3a00;
+$menu-hover-color: #800040;
+
+body {
+     background: $bg-color;
+     position: relative;
+     //put a distance 30om jombtron and top line
+     padding-top: 250px;
+     //background-color: map-get($theme-colors, "primary");
+     font-family: 'Roboto Slab', serif;
+}
+.section {
+  // position: absolute;
+  // margin-top: 300px;
+
+}
+.container-fluid .fixed_top{
+  background-color: $bg-color;
+}
+
+.plain_bg {
+  background-color: $bg-color;
+}
+
+/* change navbar background */
+
+nav.navbar {
+  background: transparent;
+}
+
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: $black-color;
+}
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-dark span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: $bg-color;
+}
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+  border-color: yellow;
+}
+
+
+.nav-link {
+  color: $black-color!important;
+  font-size: 1.1rem;
+  font-weight:400;
+}
+.nav-link.active {
+  color: $menu-hover-color !important;
+}
+
+
+.logo_border {
+  border-bottom : 2px solid #000;
+  background-color: $bg-color;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $bg-color;
+  opacity: .8;
+}

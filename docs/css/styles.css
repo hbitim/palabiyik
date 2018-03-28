@@ -6032,6 +6032,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding-top: 250px;
   font-family: 'Roboto Slab', serif; }
 
+.bg-main {
+  background: #FFCB05; }
+
+.border-top {
+  border-color: #4b3a00; }
+
 .container-fluid .fixed_top {
   background-color: #FFCB05; }
 

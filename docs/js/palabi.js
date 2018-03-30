@@ -42,7 +42,7 @@ var kimgeldi = $(location).attr('href').split('?')[1];
 
 var animeTypes = {
 
-    "tolga" : "rubberBand",
+    "tolga" : "flipInY",
     "ayse" : "tada",
     "pinar" : "jello",
     "sureyya" : "jackInTheBox",
@@ -50,11 +50,9 @@ var animeTypes = {
 
 $(document).ready(function() {
 
-    console.info('animation 1 is clicked ' + $(location).attr('pathname'));
-    if ($(location).attr('pathname') == '/index.html') {
-
+    console.info('animation 1 is index ' + $(location).attr('pathname').indexOf("index"));
+    if ($(location).attr('pathname') == "/") {
       $('.main_animation').animateCss('animated rubberBand');
-
     } else {
       var elm = "#section_"+ kimgeldi;
 
@@ -68,9 +66,5 @@ $(document).ready(function() {
         });
       });
     }
-
-
-
-
 
 });

@@ -6026,15 +6026,20 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
-@font-face {
-  font-family: BirchStd;
-  src: url("BirchStd.otf") format("opentype"); }
+.bg-color-01 {
+  background: #ffcb05; }
+
+.bg-color-02 {
+  background: #4b3a00; }
+
+.sari_text_color {
+  color: #FFCB05; }
 
 body {
   background: #FFCB05;
   position: relative;
   padding-top: 250px;
-  font-family: 'BirchStd', serif; }
+  font-family: 'Roboto Slab', serif; }
 
 .section {
   max-width: 840px; }
@@ -6066,15 +6071,22 @@ button.navbar-toggler.navbar-toggler-right {
   border-color: yellow; }
 
 .nav-link {
-  color: #4b3a00 !important;
+  color: #c49c05 !important;
   font-size: 1.1rem;
   font-weight: 400; }
 
 .nav-link.active {
-  color: #800040 !important; }
+  color: #4b3a00 !important; }
 
-.logo_border {
+.nav-link:hover {
+  color: #4b3a00 !important; }
+
+.logo_border_2 {
   border-bottom: 2px solid #000;
+  background-color: #FFCB05; }
+
+.logo_border_1 {
+  border-bottom: 1px solid #000;
   background-color: #FFCB05; }
 
 .card {
@@ -6083,5 +6095,7 @@ button.navbar-toggler.navbar-toggler-right {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #FFCB05;
   opacity: .8; }
+
+.margin-shift-up {
+  margin-top: -60px; }

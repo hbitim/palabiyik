@@ -3,14 +3,17 @@
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    console.log('scroll arrived');
+    // console.log('scroll arrived');
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      console.info(this.hash.slice(1));
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 230)
         }, 1000, "easeInOutExpo");
+        $('.main_animation').animateCss('animated rubberBand');
+
         return false;
       }
 

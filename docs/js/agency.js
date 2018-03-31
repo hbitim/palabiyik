@@ -7,12 +7,14 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      console.info(this.hash.slice(1));
+      var imgin = '#'+this.hash.slice(1)+'_img';
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 230)
         }, 1000, "easeInOutExpo");
-        $('.main_animation').animateCss('animated rubberBand');
+        setTimeout(function() {
+            var el = $(imgin).animateCss('animated rubberBand');
+        }, 1000);
 
         return false;
       }
